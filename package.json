@@ -1,0 +1,46 @@
+{
+  "name": "jsonb",
+  "version": "1.0.0",
+  "description": "json with binary data support",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/131/jsonb.git"
+  },
+  "keywords": [
+    "json"
+  ],
+  "author": "Francois Leurent <131.js@cloudyks.org>",
+  "bugs": {
+    "url": "https://github.com/131/jsonb/issues"
+  },
+  "homepage": "https://github.com/131/jsonb",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "license": "MIT",
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/8..latest",
+      "firefox/17..latest",
+      "firefox/nightly",
+      "chrome/22..latest",
+      "chrome/canary",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  }
+
+}
